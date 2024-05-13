@@ -5,9 +5,110 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  background-color:rgb(2, 106, 2);
+  color:white;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  height:10vh ;
+  align-content: center;
+  display: flex;
+}
+h1{
+  margin-left: 10px;
+}
+
+.icon {
+  width: 50px; /* Adjust the width */
+  height: 50px; /* Adjust the height */
+  margin-top: 20px; /* Adjust the margin from the top */
+  margin-left: 20px; /* Adjust the margin from the left */
+  /* Add any other styles you want */
+}
+
+
+
+.footer {
+  background-color:darkgray;
+  color: white;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  font-weight: bolder;
+  font-size: larger;
+  bottom: 0;
+}
+
+
+
+
+/*createcontent */
+
+.main_note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1vh; /* Adjust the padding from the top to make space for the header */
+  min-height: 2vh; /* Adjust the minimum height to ensure the content is visible below the header */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch items to fill the container */
+  justify-content: center;
+  width: 80%; /* Adjust the width of the form */
+  max-width: 500px; /* Limit the maximum width of the form */
+  margin-top: 20px; /* Add margin from the top */
+  background-color: #f7f7f7bf; /* Set background color */
+  border-radius: 20px; /* Add border radius */
+  box-shadow: 5px 5px 30px -15px black; /* Add shadow effect */
+  padding: 20px; /* Add padding */
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 20px); /* Adjust the width to fill the container minus padding */
+ 
+  padding: 10px;
+  background-color: #f0f0f0be; /* Set background color */
+  border: none; /* Remove border */
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px black; /* Add inner shadow effect */
+}
+
+textarea {
+  height: 150px; /* Adjust the height of the textarea */
+}
+
+.ic {
+ /* Add margin from the top */
+  align-self: flex-end; /* Align the button to the end of its container */
+  margin-left: 470px; /* Adjust the margin from the right */
+  padding: 10px 20px; /* Add padding */
+  background-color: rgb(5, 188, 5); /* Set background color */
+  color: white; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Add border radius */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.ic:hover {
+  background-color: rgb(134, 11, 235); /* Change background color on hover */
+}
+
