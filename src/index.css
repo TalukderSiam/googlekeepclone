@@ -59,24 +59,24 @@ h1{
 
 .main_note {
   display: flex;
-  flex-direction: column;
+ 
   align-items: center;
   justify-content: center;
   padding-top: 1vh; /* Adjust the padding from the top to make space for the header */
-  min-height: 2vh; /* Adjust the minimum height to ensure the content is visible below the header */
+  /* Adjust the minimum height to ensure the content is visible below the header */
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: stretch; /* Stretch items to fill the container */
-  justify-content: center;
+  
   width: 80%; /* Adjust the width of the form */
   max-width: 500px; /* Limit the maximum width of the form */
   margin-top: 20px; /* Add margin from the top */
-  background-color: #f7f7f7bf; /* Set background color */
+  background-color: antiquewhite;
   border-radius: 20px; /* Add border radius */
-  box-shadow: 5px 5px 30px -15px black; /* Add shadow effect */
+   /* Add shadow effect */
   padding: 20px; /* Add padding */
 }
 
@@ -88,7 +88,7 @@ textarea {
   background-color: #f0f0f0be; /* Set background color */
   border: none; /* Remove border */
   border-radius: 5px;
-  box-shadow: inset 0px 0px 5px black; /* Add inner shadow effect */
+ box-shadow: 5px 5px 30px -15px black; /* Add inner shadow effect */
 }
 
 textarea {
@@ -99,16 +99,120 @@ textarea {
  /* Add margin from the top */
   align-self: flex-end; /* Align the button to the end of its container */
   margin-left: 470px; /* Adjust the margin from the right */
-  padding: 10px 20px; /* Add padding */
-  background-color: rgb(5, 188, 5); /* Set background color */
-  color: white; /* Set text color */
-  border: none; /* Remove border */
+  /* Add padding */
+  background-color:rgb(213, 223, 219); /* Set background color */
+  color:darkgreen; /* Set text color */
+  height: 300px;
   border-radius: 50%; /* Add border radius */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  box-shadow: 5px 5px 30px -15px black; /* Add shadow effect */
   cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .ic:hover {
-  background-color: rgb(134, 11, 235); /* Change background color on hover */
+  background-color:darkgreen; 
+  color: aliceblue;/* Change background color on hover */
+}
+input{
+  border: none;
+  font-weight: bold;
+  font-size: larger;
+  text-transform: capitalize;
+}
+
+Button{
+  width: 60%;
+  color: blue;
+  margin-left: 300px;
+  margin-right: 200px;
+ 
+}
+
+/*note*/
+
+.note{
+  background-color: #f7f7f7bf; /* Set background color */
+  width: 20%;
+  box-shadow: 5px 5px 30px -15px black; /* Add shadow effect */
+  margin-left: 15px;
+  border-radius: 15px;
+}
+
+/* Add this to your existing CSS */
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the end */
+  margin-top: 10px; /* Adjust margin from the top */
+}
+
+.ic {
+  background-color:chartreuse;
+  color: rgb(66, 235, 66);
+  border-radius: 50%; /* Make the button circular */
+  width: 400px; /* Set width */
+  height: 400px; /* Set height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px; /* Adjust margin from the left */
+  cursor: pointer;
+}
+
+  ic:hover {
+  background-color: darkgreen;
+  color: green;
+}
+
+/* Adjustments to the existing styles */
+input[type="text"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #f0f0f0be;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px -15px black;
+}
+
+textarea {
+  height: 150px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 20px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+Button{
+  color: blue;
+}
+
+/* Add this to your existing CSS */
+
+.ic {
+  background-color:white !important; /* Set button color to green */
+  color:green !important; /* Set text color */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s; /* Add transition effect for box-shadow */
+  border: 4px green !important;
+}
+
+.ic:hover {
+  background-color: darkgreen !important; /* Darken the button color on hover */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Add shadow effect on hover */
 }
 
